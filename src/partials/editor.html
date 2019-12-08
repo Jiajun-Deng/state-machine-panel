@@ -1,0 +1,33 @@
+<div class="editor-row">
+  <div class="section gf-form-group">
+    <h4>Choose a mode</h4>
+    <div class="gf-form">
+      <label class="gf-form-label width-8">Mode select</label>
+      <div class="gf-form-select-wrapper max-width-13">
+        <select class="input-small gf-form-input" ng-model="ctrl.panel.mode" value="Current State"
+          ng-options="t for t in ['Current State','Transition Counts','Time in State']" ng-change="ctrl.render()">
+          <option value="'Current State'"></option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div class="section gf-form-group" ng-show="ctrl.panel.mode == 'Current State'">
+    <h4>Input trail number</h4>
+    <div class="gf-form">
+      <label class="gf-form-label width-8">Trail</label>
+      <input type="number" ng-model="ctrl.panel.trailNum" class="gf-form-input max-width-5" ng-blur="ctrl.render()"
+        min=1 max=5/>
+      <info-popover mode="right-absolute">Up to 5 states will be displayed as the trail.</info-popover>
+    </div>
+  </div>
+</div>
+<br>
+<div class="editor-row">
+  <h4>State Machine Definition</h4>
+  <div class="gf-form">
+    <label class="gf-form-label width-8">SCXML</label>
+    <textarea class="gf-form-input" ng-model="ctrl.panel.scxml" rows="20" cols="10" style="width: 90%"
+      ng-change="ctrl.render()" ng-model-onblur>
+      </textarea>
+  </div>
+</div>

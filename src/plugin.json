@@ -1,0 +1,25 @@
+{
+  "id": "aftmi-grafanaplugin-statemachinepanel",
+  "type": "panel",
+  "name": "StateMachine",
+  "info": {
+    "description": "Visualize state machines defined by scxml files, display the current state and the aggregation of historical state trends.",
+    "author": {
+      "name": "AFT Machine Insights",
+      "url": "https://code.amazon.com/packages/AFTMI-GrafanaPlugin-StateMachinePanel/trees/v1.0"
+    },
+    "keywords": ["State machine", "Current State", "Aggregation historical state trends"],
+    "logos": {
+      "small": "img/aftmi-panel.svg",
+      "large": "img/aftmi-panel.svg"
+    },
+    "links": [],
+    "screenshots": [],
+    "version": "1.0.0",
+    "updated": "2019-08-28"
+  },
+  "dependencies": {
+    "grafanaVersion": "6.2.5",
+    "plugins": []
+  }
+}
