@@ -2,7 +2,7 @@
 
 Panel name: *-GrafanaPlugin-StateMachinePanel
 
-This Grafana panel plugin is provided to visualize a state machine model defined by SCXML and show the current state or aggregate historical states based on the live data from AIM.
+This Grafana panel plugin is provided to visualize a state machine model defined by SCXML and show the current state or aggregate historical states based on the live data from *.
 
 ## 1. Instructions for development
 
