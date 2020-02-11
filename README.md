@@ -1,6 +1,6 @@
 # Introduction
 
-Panel name: AFTMI-GrafanaPlugin-StateMachinePanel
+Panel name: *-GrafanaPlugin-StateMachinePanel
 
 This Grafana panel plugin is provided to visualize a state machine model defined by SCXML and show the current state or aggregate historical states based on the live data from AIM.
 
@@ -15,7 +15,7 @@ This Grafana panel plugin is provided to visualize a state machine model defined
 
    * Install
   
-      Install the panel by unzipping the .zip file and put the whole directory (aftmi-grafanaplugin-statemachinepanel) underneath the plugins directory for Grafana. Typically, it’s `/usr/var/lib/grafana/plugins`. 
+      Install the panel by unzipping the .zip file and put the whole directory (*-grafanaplugin-statemachinepanel) underneath the plugins directory for Grafana. Typically, it’s `/usr/var/lib/grafana/plugins`. 
       
       You will need to install and setup the AIM connector datasource plugin.
 
@@ -25,11 +25,11 @@ This Grafana panel plugin is provided to visualize a state machine model defined
 
    * Input scxml && Select mode
   
-   * Connect to AIM datasource, set the stream and query.
+   * Connect to *** datasource, set the stream and query.
    * 
       Below is an exmple of stream and query:
 
-      `Amazon/FC/SAT2/SmartPac/702/OEE/RAW/STATE`
+      `.../FC/SAT2/.../702/OEE/RAW/STATE`
 
       `select CurrentState as "value", semanticTimestamp from @stream`
 
